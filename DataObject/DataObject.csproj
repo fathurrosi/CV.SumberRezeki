@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C48D0387-5D44-4422-A3E4-A265AD79D00E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataObject</RootNamespace>
+    <AssemblyName>DataObject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Custom.Config">
+      <HintPath>..\Dependencies\Custom.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="DBHelper">
+      <HintPath>..\Dependencies\DBHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalog.cs" />
+    <Compile Include="CatalogPrice.cs" />
+    <Compile Include="CatalogStock.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="personel.cs" />
+    <Compile Include="Profile.cs" />
+    <Compile Include="PurchaseReturn.cs" />
+    <Compile Include="PurchaseReturnDetail.cs" />
+    <Compile Include="Cstm\CstmBuyPrice.cs" />
+    <Compile Include="Cstm\CstmDailySale.cs" />
+    <Compile Include="Cstm\CstmPurchasesPerSupplierMonthly.cs" />
+    <Compile Include="Cstm\CstmSalesPerCustomerMonthly.cs" />
+    <Compile Include="Cstm\CstmCatalogStock.cs" />
+    <Compile Include="Cstm\CstmDailyGrossProfit.cs" />
+    <Compile Include="Cstm\cstmHPH.cs" />
+    <Compile Include="Cstm\CstmHPP.cs" />
+    <Compile Include="Cstm\CstmMenu.cs" />
+    <Compile Include="Cstm\CstmSales.cs" />
+    <Compile Include="Cstm\CstmSalesPercustomerPerYear.cs" />
+    <Compile Include="Cstm\CstmSellPrice.cs" />
+    <Compile Include="Cstm\CstmStock.cs" />
+    <Compile Include="Cstm\CstmTotalPurchase.cs" />
+    <Compile Include="Cstm\Piutang.cs" />
+    <Compile Include="Cstm\StockSummary.cs" />
+    <Compile Include="CurrentStock.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="GrossProfit.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Privilege.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase.cs" />
+    <Compile Include="PurchaseDetail.cs" />
+    <Compile Include="Reconcile.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="Sale.cs" />
+    <Compile Include="SaleDetail.cs" />
+    <Compile Include="SaleReturn.cs" />
+    <Compile Include="SaleReturnDetail.cs" />
+    <Compile Include="settings.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="terminal.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="Variables.cs" />
+    <Compile Include="vehicle.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
